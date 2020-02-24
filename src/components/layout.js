@@ -34,12 +34,29 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
       </div>
+        <footer
+          style={{
+            background: "#0d0f2e",
+          }}
+        >
+          <div
+            style={{
+              padding: `0.5rem 1.0875rem`,
+              color: "#01d609",
+              textAlign: 'center',
+              fontWeight: "bold",
+              fontSize: 30,
+              
+            }}
+          >
+            team@codenetwork.co 
+          </div>
+          <div style={{
+            background: "#01d609",
+            height: 10
+          }}/>
+        </footer>
     </>
   )
 }
