@@ -15,8 +15,10 @@ const ExecWindow = ({ exec }) => (
         borderColor: '#01d609',
         borderWidth: 10
       }}/>
-      <h3>{exec.name}</h3>
-      <h4>{exec.role}</h4>
+      <h3 style={{
+        marginBottom: 8
+      }}>{exec.name}</h3>
+      <h5>{exec.role}</h5>
     </div>
  )
 
