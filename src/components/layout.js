@@ -24,40 +24,50 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <div
+      style={{
+        position: "relative",
+        minHeight: "100vh",
+      }}
+    >
       <Header siteTitle={data.site.siteMetadata.title} />
-      <div
+      <main
         style={{
           margin: `0 auto`,
           maxWidth: 960,
+          paddingBottom: "3rem" /* Footer height */,
+
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
-        <main>{children}</main>
-      </div>
-        <footer
+        {children}
+      </main>
+      <footer
+        style={{
+          width: "100%",
+          position: "absolute",
+          bottom: 0,
+        }}
+        >
+        <div
           style={{
             background: "#0d0f2e",
+            padding: `0.5rem 1.0875rem`,
+            color: "#01d609",
+            fontWeight: "bold",
+            fontSize: 30,
           }}
         >
-          <div
-            style={{
-              padding: `0.5rem 1.0875rem`,
-              color: "#01d609",
-              textAlign: 'center',
-              fontWeight: "bold",
-              fontSize: 30,
-              
-            }}
-          >
-            team@codenetwork.co 
-          </div>
-          <div style={{
+          team@codenetwork.co
+        </div>
+        <div
+          style={{
             background: "#01d609",
-            height: 10
-          }}/>
-        </footer>
-    </>
+            height: '0.5rem',
+          }}
+        />
+      </footer>
+    </div>
   )
 }
 
