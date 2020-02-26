@@ -45,30 +45,33 @@ const Header = ({ siteTitle }) => (
         <CodeNetworkLogo />
       </Link>
     </div>
-    <Link
+    <a href='https://www.facebook.com/groups/WeCodeAlot/'
       style={{
-        textDecoration: 'none'
-      }}>
+        textDecoration: "none",
+      }}
+    >
       <div
         style={{
           position: "relative",
-          background: '#01d609',
+          background: "#01d609",
           maxWidth: 150,
           margin: `0 auto`,
           height: `2.5rem`,
-          bottom: '-13px',
+          bottom: "-13px",
           borderRadius: 20,
-          textAlign: 'center',
-          paddingTop: '10% 0',
-          fontFamily: 'sans',
-          color: 'black',
-          fontWeight: 'bold',
+          textAlign: "center",
+          paddingTop: "10% 0",
+          fontFamily: "sans",
+          color: "black",
+          fontWeight: "bold",
           lineHeight: 2.3,
-          boxShadow: '0 0 10px'
+          boxShadow: "0 0 10px",
         }}
-      > JOIN
+      >
+        {" "}
+        JOIN
       </div>
-    </Link>
+    </a>
   </header>
 )
 
