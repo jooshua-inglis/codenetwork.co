@@ -18,6 +18,7 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
+          email
         }
       }
     }
@@ -58,7 +59,10 @@ const Layout = ({ children }) => {
             fontSize: 30,
           }}
         >
-          team@codenetwork.co
+          <a style={{
+            color: 'inherit',
+            textDecoration: 'none'
+          }} href={`mailtod:${data.site.siteMetadata.email}`}>{data.site.siteMetadata.email}</a>
         </div>
         <div
           style={{

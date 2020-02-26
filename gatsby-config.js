@@ -7,6 +7,7 @@ module.exports = {
     title: `Code Network`,
     description: `Build anything, as long as it's awsome`,
     author: `Code Network Members`,
+    email: 'team@codenetwork.co'
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
