@@ -35,9 +35,8 @@ const Layout = ({ children }) => {
         style={{
           margin: '0 auto',
           maxWidth: 960,
-          padding: '0 1.0875rem 1.45rem',
-          paddingBottom: '4rem' /* Footer height */,
-
+          paddingTop: '1.5rem',
+          paddingBottom: '4rem'
         }}
       >
         {children}
