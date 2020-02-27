@@ -1,5 +1,4 @@
 import { Link, useStaticQuery, graphql } from 'gatsby'
-import PropTypes from 'prop-types'
 import React from 'react'
 import Img from 'gatsby-image'
 
@@ -19,7 +18,7 @@ const CodeNetworkLogo = () => {
   return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
 }
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <header
     style={{
       background: '#0d0f2e',
@@ -73,13 +72,5 @@ const Header = ({ siteTitle }) => (
     </a>
   </header>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string
-}
-
-Header.defaultProps = {
-  siteTitle: ''
-}
 
 export default Header

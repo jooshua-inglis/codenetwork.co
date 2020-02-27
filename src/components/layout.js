@@ -17,7 +17,6 @@ const Layout = ({ children }) => {
     query SiteTitleQuery {
       site {
         siteMetadata {
-          title
           email
         }
       }
@@ -31,7 +30,7 @@ const Layout = ({ children }) => {
         minHeight: '100vh'
       }}
     >
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header />
       <main
         style={{
           margin: '0 auto',
