@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import PropTypes from 'prop-types'
 
 const ICONS = [
   {
@@ -17,13 +18,12 @@ const ICONS = [
 ]
 
 const Div = styled.div`
-  min-height: 0.5rem;
   display: flex;
-  border-radius: 0.5rem;
+  border-radius: 5rem;
   align-items: center;
   justify-content: center;
   transition: 0.5s;
-  padding: 0.5rem;
+  padding: 0.7rem;
 
   :hover {
     background-color: rgb(1, 214, 9);
@@ -59,6 +59,10 @@ function SocialIcons({ style }) {
     )
   })
   return <div style={style}> {Icons}</div>
+}
+
+SocialIcons.propTypes = {
+  style: PropTypes.object
 }
 
 export default SocialIcons

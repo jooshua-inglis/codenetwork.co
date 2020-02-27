@@ -39,7 +39,7 @@ const Button = styled.a`
   text-decoration: none;
   transition: 0.5s;
   :hover {
-    background: #00a206;
+    background: #00ff0a;
   }
 `
 
