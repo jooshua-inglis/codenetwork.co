@@ -29,10 +29,11 @@ const Div = styled.div`
   color: white;
   font-weight: lighter;
   font-size: 2.5vw;
-  
-@media screen and (min-width: 600px) {
-     font-size: 0.9rem;
-  
+
+  @media screen and (min-width: 600px) {
+    font-size: 0.9rem;
+  }
+
   :hover {
     background-color: rgb(1, 214, 9);
   }

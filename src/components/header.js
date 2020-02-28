@@ -54,7 +54,7 @@ const TopBar = styled.div`
 `
 
 const Header = () => (
-  <header
+  <header 
     style={{
       background: '#0d0f2e',
       marginBottom: '1.45rem'
