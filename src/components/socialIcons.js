@@ -24,6 +24,7 @@ const Div = styled.div`
   justify-content: center;
   transition: 0.5s;
   padding: 0.7rem;
+  margin: 0 0.3rem;
 
   :hover {
     background-color: rgb(1, 214, 9);
@@ -33,22 +34,13 @@ const Div = styled.div`
 function SocialIcons({ style }) {
   const Icons = ICONS.map(function(icon) {
     return (
-      <div
-        style={{
-          display: 'inline-block'
-        }}
-        key={icon.url}
-      >
-        <a
-          style={{
-            display: 'float'
-          }}
-          href={icon.url}
-        >
+      <div key={icon.url}>
+        <a href={icon.url}>
           <Div>
             <img
               style={{
-                width: '2rem',
+                maxWidth: '2rem',
+                width: '5vw',
                 marginBottom: 0
               }}
               src={icon.image}

@@ -3,6 +3,7 @@ import React from 'react'
 import Img from 'gatsby-image'
 import SocialIcons from './socialIcons'
 import styled from 'styled-components'
+import Navbar from './navbar'
 
 const CodeNetworkLogo = () => {
   const data = useStaticQuery(graphql`
@@ -38,9 +39,18 @@ const Button = styled.a`
   box-shadow: 0 0 10px;
   text-decoration: none;
   transition: 0.5s;
+
   :hover {
     background: #00ff0a;
   }
+`
+
+const TopBar = styled.div`
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 `
 
 const Header = () => (
@@ -50,17 +60,24 @@ const Header = () => (
       marginBottom: '1.45rem'
     }}
   >
-    <SocialIcons
-      style={{
-        marginLeft: '10vw',
-        display: 'flex'
-      }}
-    />
+    <TopBar>
+      <SocialIcons
+        style={{
+          display: 'flex'
+        }}
+      />
+      <Navbar
+        style={{
+          display: 'flex'
+        }}
+      />
+    </TopBar>
     <div
       style={{
         margin: '0 auto',
         maxWidth: 200,
-        padding: '2.5rem 1.0875rem'
+        width: '30vw',
+        padding: '2.5rem 1.0875rem 1.2rem'
       }}
     >
       <Link
