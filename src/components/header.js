@@ -48,13 +48,14 @@ const Button = styled.a`
 const TopBar = styled.div`
   position: absolute;
   width: 100%;
+  padding: 0 7vw;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
 `
 
 const Header = () => (
-  <header 
+  <header
     style={{
       background: '#0d0f2e',
       marginBottom: '1.45rem'
