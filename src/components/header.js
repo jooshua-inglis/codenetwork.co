@@ -4,6 +4,7 @@ import Img from 'gatsby-image'
 import SocialIcons from './socialIcons'
 import styled from 'styled-components'
 import Navbar from './navbar'
+import PropTypes from 'prop-types'
 
 const CodeNetworkLogo = () => {
   const data = useStaticQuery(graphql`
@@ -21,7 +22,7 @@ const CodeNetworkLogo = () => {
   return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
 }
 
-const JoinButton = styled.a`
+const StyledJoinButton = styled.a`
   appearance: button;
   position: relative;
   background: #01d609;
@@ -45,7 +46,7 @@ const JoinButton = styled.a`
   }
 `
 
-const TopBar = styled.div`
+const StyledTopBar = styled.div`
   position: absolute;
   min-width: 100%;
   padding: 0 7vw;
@@ -66,19 +67,23 @@ const StyledLogo = styled.div`
   padding: 2.5rem 1.0875rem 1.2rem;
 `
 
-const Header = () => (
-  <header>
-    <TopBar>
+const Header = ({ className }) => (
+  <header className={className}>
+    <StyledTopBar>
       <SocialIcons className="social-icons" />
       <Navbar className="navbar" />
-    </TopBar>
+    </StyledTopBar>
     <StyledLogo>
       <Link to="/">
         <CodeNetworkLogo />
       </Link>
     </StyledLogo>
-    <JoinButton href="https://facebook.com"> Join Now </JoinButton>
+    <StyledJoinButton href="https://facebook.com"> Join Now </StyledJoinButton>
   </header>
 )
+
+Header.propTypes = {
+  className: PropTypes.string
+}
 
 export default Header

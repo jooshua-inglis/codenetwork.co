@@ -26,7 +26,7 @@ const StyledA = styled.a`
   transition: 0.5s;
   padding: 0.7rem;
   margin: 0 0.3rem;
-  width: 8vw;
+  width: 10vw;
   max-width: 3rem;
 
   img {
@@ -34,6 +34,7 @@ const StyledA = styled.a`
   }
 
   @media screen and (max-width: 600px) {
+    padding: 0.6rem;
     margin: 0;
   }
 

@@ -9,18 +9,6 @@ const ICONS = [
     name: string - name of page that appears on navbar
     path: string - path of page
   } */
-  {
-    name: 'About',
-    path: 'conteact'
-  },
-  {
-    name: 'Contact',
-    path: 'conteact'
-  },
-  {
-    name: 'Events',
-    path: 'conteact'
-  }
 ]
 
 const StyledLink = styled(Link)`
