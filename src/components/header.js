@@ -21,7 +21,7 @@ const CodeNetworkLogo = () => {
   return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
 }
 
-const Button = styled.a`
+const JoinButton = styled.a`
   appearance: button;
   position: relative;
   background: #01d609;
@@ -47,51 +47,37 @@ const Button = styled.a`
 
 const TopBar = styled.div`
   position: absolute;
-  width: 100%;
+  min-width: 100%;
   padding: 0 7vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  .navbar,
+  .social-icons {
+    display: flex;
+  }
+`
+
+const StyledLogo = styled.div`
+  margin: 0 auto;
+  max-width: 200px;
+  width: 30vw;
+  padding: 2.5rem 1.0875rem 1.2rem;
 `
 
 const Header = () => (
-  <header
-    style={{
-      background: '#0d0f2e',
-      marginBottom: '1.45rem'
-    }}
-  >
+  <header>
     <TopBar>
-      <SocialIcons
-        style={{
-          display: 'flex'
-        }}
-      />
-      <Navbar
-        style={{
-          display: 'flex'
-        }}
-      />
+      <SocialIcons className="social-icons" />
+      <Navbar className="navbar" />
     </TopBar>
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 200,
-        width: '30vw',
-        padding: '2.5rem 1.0875rem 1.2rem'
-      }}
-    >
-      <Link
-        to="/"
-        style={{
-          color: 'white',
-          textDecoration: 'none'
-        }}
-      >
+    <StyledLogo>
+      <Link to="/">
         <CodeNetworkLogo />
       </Link>
-    </div>
-    <Button href="https://facebook.com"> Join Now </Button>
+    </StyledLogo>
+    <JoinButton href="https://facebook.com"> Join Now </JoinButton>
   </header>
 )
 

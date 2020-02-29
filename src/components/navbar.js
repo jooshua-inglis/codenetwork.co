@@ -4,6 +4,11 @@ import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 
 const ICONS = [
+  /* list of objects with the follong format  :
+  {
+    name: string - name of page that appears on navbar
+    path: string - path of page
+  } */
   {
     name: 'About',
     path: 'conteact'
@@ -18,7 +23,8 @@ const ICONS = [
   }
 ]
 
-const Div = styled.div`
+const StyledLink = styled(Link)`
+  appearance: div;
   display: flex;
   border-radius: 5rem;
   align-items: center;
@@ -28,10 +34,12 @@ const Div = styled.div`
   margin: 0 0.5rem;
   color: white;
   font-weight: lighter;
-  font-size: 2.5vw;
+  font-size: 0.9rem;
+  text-decoration: none;
 
-  @media screen and (min-width: 600px) {
-    font-size: 0.9rem;
+  @media screen and (max-width: 600px) {
+    font-size: 3.3vw;
+    margin: 0 0.2rem;
   }
 
   :hover {
@@ -39,26 +47,19 @@ const Div = styled.div`
   }
 `
 
-function Navbar({ style }) {
+function Navbar({ className }) {
   const Icons = ICONS.map(function(icon) {
     return (
-      <div key={icon.name}>
-        <Link
-          style={{
-            textDecoration: 'none'
-          }}
-          to={icon.url}
-        >
-          <Div>{icon.name}</Div>
-        </Link>
-      </div>
+      <StyledLink key={icon.name} to={icon.url}>
+        {icon.name}
+      </StyledLink>
     )
   })
-  return <div style={style}> {Icons}</div>
+  return <div className={className}>{Icons}</div>
 }
 
 Navbar.propTypes = {
-  style: PropTypes.object
+  className: PropTypes.string
 }
 
 export default Navbar
