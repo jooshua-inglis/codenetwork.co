@@ -54,8 +54,8 @@ const StyledTopBar = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  .navbar,
-  .social-icons {
+  > .navbar,
+  > .social-icons {
     display: flex;
   }
 `

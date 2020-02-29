@@ -29,7 +29,7 @@ const StyledA = styled.a`
   width: 10vw;
   max-width: 3rem;
 
-  img {
+  > img {
     margin-bottom: 0;
   }
 
