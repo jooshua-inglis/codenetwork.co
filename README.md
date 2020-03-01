@@ -17,4 +17,4 @@ This website is build with [gatsbyjs](https://gatsbyjs.org), and hosted off [net
 
 ## Contributing 
 
-If you are unsure about how to create pull reqeust, look at this for guidance https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request
+If you are unsure about how to create pull reqeust, look at this for guidance https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request 
