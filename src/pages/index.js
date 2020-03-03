@@ -36,7 +36,7 @@ const IndexPage = () => {
       </p>
       <p>
         This site is a work on progress. If you'd like to contribute, you can do
-        so <a herf="https://github.com/codenetwork/codenetwork.co">here</a>
+        so <a href="https://github.com/codenetwork/codenetwork.co">here</a>
       </p>
       <h1>Our Team</h1>
       <ExecPreview execs={execs} />
