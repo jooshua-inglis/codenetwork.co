@@ -26,7 +26,7 @@ const CodeNetworkLogo = () => {
 const StyledJoinButton = styled.a`
   appearance: button;
   position: relative;
-  background: #01d609;
+  background: ${props => props.theme.main.fg};
   width: 150px;
   margin: 0 auto;
   bottom: -13px;
