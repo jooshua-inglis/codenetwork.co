@@ -5,6 +5,7 @@ import SocialIcons from './socialIcons'
 import styled from 'styled-components'
 import Navbar from './navbar'
 import PropTypes from 'prop-types'
+import 'gatsby-transformer-sharp'
 
 const CodeNetworkLogo = () => {
   const data = useStaticQuery(graphql`
@@ -12,7 +13,7 @@ const CodeNetworkLogo = () => {
       placeholderImage: file(relativePath: { eq: "logo.png" }) {
         childImageSharp {
           fluid(maxWidth: 200) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_tracedSVG
           }
         }
       }
