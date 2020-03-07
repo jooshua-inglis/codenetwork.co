@@ -8,6 +8,10 @@ export default {
     content: {
       bg: '#060717',
       fg: '#f0f0f0'
+    },
+    contentAlt: {
+      bg: '#0d0f2e',
+      fg: '#01d609'
     }
   },
   light: {
@@ -19,6 +23,10 @@ export default {
     content: {
       bg: 'white',
       fg: 'hsla(0, 0%, 0%, 0.8)'
+    },
+    contentAlt: {
+      bg: '#060717',
+      fg: '#f0f0f0'
     }
   }
 }

@@ -25,6 +25,8 @@ const Layout = ({ children }) => {
     }
   `)
 
+  const [theme, setTheme] = useState('light')
+
   const StyledLayout = styled.div`
     position: relative;
     min-height: 100vh;
@@ -33,17 +35,25 @@ const Layout = ({ children }) => {
     header {
       background: ${props => props.theme.main.bg};
     }
-    main {
+
+    .content {
       margin: 0 auto;
       max-width: 960px;
-      padding-top: 1.5rem;
-      padding-bottom: 4rem;
+      padding: 3rem 2rem 3rem 2rem;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
     }
 
-    .main-container {
+    .content-segment {
       background: ${props => props.theme.content.bg};
       color: ${props => props.theme.content.fg};
     }
+
+    .content-segment-alt {
+      background: ${props => props.theme.contentAlt.bg};
+      color: ${props => props.theme.contentAlt.fg};
+    }
+
     footer {
       width: 100%;
       position: absolute;
@@ -79,7 +89,6 @@ const Layout = ({ children }) => {
       }
     }
   `
-  const [theme, setTheme] = useState('light')
   const toggleTheme = () => {
     if (theme === 'light') {
       setTheme('dark')
@@ -92,9 +101,14 @@ const Layout = ({ children }) => {
     <ThemeProvider theme={theme === 'light' ? UI.light : UI.dark}>
       <StyledLayout>
         <Header />
-        <div className="main-container">
-          <main>{children}</main>
-        </div>
+        {children.map((child, idx) => (
+          <div
+            key={idx}
+            className={`content-segment${idx % 2 == 0 ? '' : '-alt'}`}
+          >
+            <div className="content">{child}</div>
+          </div>
+        ))}
         <footer onDoubleClick={toggleTheme}>
           <div className="info-pane">
             <a
