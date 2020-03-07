@@ -3,6 +3,7 @@ import React from 'react'
 import ExecPreview from '../components/execPreview'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import ContactForm from '../components/contactForm'
 
 const IndexPage = () => {
   const execs = useStaticQuery(graphql`
@@ -40,6 +41,7 @@ const IndexPage = () => {
       </p>
       <h1>Our Team</h1>
       <ExecPreview execs={execs} />
+      <ContactForm />
     </Layout>
   )
 }
