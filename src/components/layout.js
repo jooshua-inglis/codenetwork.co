@@ -109,6 +109,7 @@ const Layout = ({ children }) => {
             <div className="content">{child}</div>
           </div>
         ))}
+        <div style={{ height: 80 }} />
         <footer onDoubleClick={toggleTheme}>
           <div className="info-pane">
             <a
