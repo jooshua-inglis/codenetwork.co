@@ -42,10 +42,6 @@ const IndexPage = () => {
         talent in the world, starting here in Brisbane. We’re based at QUT and
         are expanding to other universities and organisations in the area.
       </p>
-      <Bug>
-        CODE NETWORK BASICS BUG
-        <img src="https://i0.wp.com/entomologytoday.org/wp-content/uploads/2019/01/brown-marmorated-stink-bug-Halyomorpha-halys-close-up.jpg?resize=878%2C515&ssl=1" />
-      </Bug>
       <p>
         This site is a work in progress. If you'd like to contribute, you can do
         so <a href="https://github.com/codenetwork/codenetwork.co">here</a>
