@@ -4,6 +4,8 @@ import ExecPreview from '../components/execPreview'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import ContactForm from '../components/contactForm'
+import styled from 'styled-components'
+
 
 const IndexPage = () => {
   const execs = useStaticQuery(graphql`
@@ -24,6 +26,13 @@ const IndexPage = () => {
     }
   `).allExecsYaml.nodes
 
+  const Bug = styled.div`
+    color: red;
+    img {
+      width: 100px;
+    }
+  `
+
   return (
     <Layout>
       <SEO title="Home" />
@@ -35,7 +44,7 @@ const IndexPage = () => {
         talent in the world, starting here in Brisbane. We’re based at QUT and
         are expanding to other universities and organisations in the area.
       </p>
-      <p>
+     <p>
         This site is a work in progress. If you'd like to contribute, you can do
         so <a href="https://github.com/codenetwork/codenetwork.co">here</a>
       </p>
