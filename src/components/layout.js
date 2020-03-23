@@ -41,6 +41,7 @@ const Layout = ({ children }) => {
     }
 
     .main-container {
+      margin: 0 1rem;
       background: ${props => props.theme.content.bg};
       color: ${props => props.theme.content.fg};
     }
