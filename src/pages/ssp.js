@@ -1,19 +1,9 @@
 import React from 'react'
 import Layout from '../components/layout'
 import styled from 'styled-components'
+import RulesContainer from '../components/rulesContainer'
 
-const Container = styled.div`
-  text-align: left;
-  h3 {
-    margin-bottom: 10px;
-    margin-left: 0;
-  }
-  .summary {
-    font-size: 10pt;
-    line-height: 13pt;
-    margin-left: 20px;
-  }
-
+const Container = styled(RulesContainer)`
   .terminology {
     display: flex;
     div {
@@ -25,10 +15,12 @@ const Container = styled.div`
 const RulesPage = () => (
   <Layout>
     <Container>
-      <h1>Safe Space Polocy</h1>
-      Code Network is and always will be a safe and inclusive space for
-      everyone. We believe that in the absence of true equality in our world, we
-      should aim to provide equity to those who need it.
+      <h1>Safe Space Policy</h1>
+      <p>
+        Code Network is and always will be a safe and inclusive space for
+        everyone. We believe that in the absence of true equality in our world,
+        we should aim to provide equity to those who need it.
+      </p>
       <div className="summary">
         <h3>tl;dr</h3>
         <p>

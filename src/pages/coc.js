@@ -1,26 +1,17 @@
+import { Link } from 'gatsby'
 import React from 'react'
 import Layout from '../components/layout'
-import styled from 'styled-components'
-import { Link } from 'gatsby'
-
-const Container = styled.div`
-  text-align: left;
-  h3 {
-    margin-bottom: 10px;
-    margin-left: 0;
-  }
-  .summary {
-    font-size: 10pt;
-    line-height: 13pt;
-    font-style: italic;
-    margin-left: 2rem;
-  }
-`
+import RulesContainer from '../components/rulesContainer'
 
 const CodeOfConductPage = () => (
   <Layout>
-    <Container>
+    <RulesContainer>
       <h1>Code of Conduct</h1>
+      <p>
+        To help make our community feel safe and welcoming, this code of conduct
+        describes how we expect people to behave and interact with each other
+        while taking part in our community
+      </p>
       <div className="summary">
         <h3>tl;dr</h3>
         <p>
@@ -31,11 +22,6 @@ const CodeOfConductPage = () => (
           discriminate against or harass someone.
         </p>
       </div>
-      <p>
-        To help make our community feel safe and welcoming, this code of conduct
-        describes how we expect people to behave and interact with each other
-        while taking part in our community
-      </p>
 
       <h3>Be Considerate</h3>
       <p>
@@ -108,7 +94,7 @@ const CodeOfConductPage = () => (
         Above all else, if you aren’t sure about something check with the
         executive first.
       </p>
-    </Container>
+    </RulesContainer>
   </Layout>
 )
 

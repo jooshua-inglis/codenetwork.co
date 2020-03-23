@@ -1,23 +1,11 @@
+import { Link } from 'gatsby'
 import React from 'react'
 import Layout from '../components/layout'
-import styled from 'styled-components'
-import { Link } from 'gatsby'
-
-const Container = styled.div`
-  text-align: left;
-  h3 {
-    margin-bottom: 10px;
-    margin-left: 0;
-  }
-  .summary {
-    font-size: 10pt;
-    line-height: 13pt;
-  }
-`
+import RulesContainer from '../components/rulesContainer'
 
 const RulesPage = () => (
   <Layout>
-    <Container>
+    <RulesContainer>
       <h1>General Rules</h1>
       <p>
         These are general rules that apply everywhere in the Code Network
@@ -88,7 +76,7 @@ const RulesPage = () => (
         <Link to="/coc">Code of Conduct</Link> and{' '}
         <Link to="/ssp">Safe Space Policy</Link>.
       </p>
-    </Container>
+    </RulesContainer>
   </Layout>
 )
 
