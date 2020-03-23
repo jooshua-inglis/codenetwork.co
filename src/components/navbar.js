@@ -7,8 +7,12 @@ const ICONS = [
   /* list of objects with the follong format  :
   {
     name: string - name of page that appears on navbar
-    path: string - path of page
+    url: string - path of page
   } */
+  {
+    name: 'Rules',
+    url: '/rules'
+  }
 ]
 
 const StyledLink = styled(Link)`

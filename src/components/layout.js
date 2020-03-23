@@ -37,7 +37,7 @@ const Layout = ({ children }) => {
       margin: 0 auto;
       max-width: 960px;
       padding-top: 1.5rem;
-      padding-bottom: 4rem;
+      padding-bottom: 5rem;
     }
 
     .main-container {
