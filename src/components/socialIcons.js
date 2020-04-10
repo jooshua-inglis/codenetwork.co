@@ -9,7 +9,7 @@ const ICONS = [
   },
   {
     image: '/discord.svg',
-    url: 'https://discordapp.com/channels/349872637645684736/413628419226468352'
+    url: 'https://discordapp.com/invite/f6VRUW9'
   },
   {
     image: '/twitter.svg',
