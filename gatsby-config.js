@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Code Network',
-    description: "Build anything, as long as it's awsome",
+    description: "Build anything, as long as it's awesome",
     author: 'Code Network Members',
     email: 'team@codenetwork.co'
   },
